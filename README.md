@@ -1,3 +1,2 @@
 # flask_default
-
-<img width="1140" alt="homepage" src="https://github.com/YvonneZuo/flask_default/assets/97566388/e817df1a-2f41-4afc-af05-d843cc613d05">
+<img width="625" alt="homepage" src="https://github.com/YvonneZuo/flask_default/assets/97566388/b84cee60-373b-4611-8fbd-6e779d84b594">
