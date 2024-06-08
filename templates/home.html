@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bank Default Predictions</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}">
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>Bank Default Predictions</h1>
+
+     <!-- Form to enter new data for predictions  -->
+    <form action="{{ url_for('predict')}}"method="POST">
+      <input type="text" name="credit_history" placeholder="Credit history" required="required" /><br>
+    	<input type="text" name="purpose" placeholder="Purpose" required="required" /><br>
+        <input type="text" name="credit_amount" placeholder="Credit amount" required="required" /><br>
+        <input type="text" name="savings_account" placeholder="Savings account" required="required" /><br>
+        <input type="text" name="personal_status_and_sex" placeholder="Personal status and sex" required="required" /><br>
+        <input type="text" name="job" placeholder="Job" required="required" /><br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+
+
+ </div>
+ {{pred}}
+
+</body>
+</html>
