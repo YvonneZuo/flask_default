@@ -1,0 +1,8 @@
+# Ignore log files
+logs.log
+
+# Ignore LightGBM folder
+LightGBM/
+
+# Ignore the data
+credit_data.csv
